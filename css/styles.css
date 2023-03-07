@@ -18,10 +18,25 @@ body {
 ul,
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  background-color: tomato;
+}
+
+.header-container {
+  padding: 24px 15px;
 }
 
 /*---------- HEADER ---------- */
@@ -73,13 +88,15 @@ ul,
   height: 600px;
   left: 0px;
   top: 72px;
+  text-align: center;
+  padding: 188px 472px;
   background-color: var(--primery-text-color);
 }
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 48px;
   color: var(--header-color);
 }
 
@@ -107,6 +124,7 @@ ul,
 .hero-btn {
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
+
   background-color: var(--accent-color);
   color: var(--header-color);
 }
@@ -135,12 +153,17 @@ ul,
   visibility: hidden;
 }
 
+.studio-list {
+margin-bottom: 120px;
+}
+
 .stidio-text,
 .pictures-item {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
   color: var(--primery-text-color);
 }
 
@@ -149,10 +172,15 @@ ul,
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin: 0;
   color: var(--title-text-color);
 }
 
 /*---------- What are we doing ---------- */
+
+.work-container {
+  margin-bottom: 120px;
+}
 
 .section-title {
   font-size: 36px;
