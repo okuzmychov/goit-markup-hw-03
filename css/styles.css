@@ -22,7 +22,12 @@ ul,
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 .link {
@@ -35,11 +40,15 @@ h1, h2, h3, h4, h5, h6 {
   background-color: tomato;
 }
 
-.header-container {
-  padding: 24px 15px;
-}
-
 /*---------- HEADER ---------- */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  padding-left: 15px;
+}
 
 .header-logo {
   font-family: 'Raleway', sans-serif;
@@ -56,6 +65,21 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primery-text-color);
 }
 
+.header-list,
+.address-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-list .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header-list li {
+  outline: 1px solid cadetblue;
+}
+
 .link.current {
   color: var(--accent-color);
 }
@@ -68,6 +92,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .address {
   font-style: normal;
+  margin-right: 15px;
+  margin-left: auto;
 }
 
 .address-text {
@@ -154,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .studio-list {
-margin-bottom: 120px;
+  margin-bottom: 120px;
 }
 
 .stidio-text,
