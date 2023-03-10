@@ -77,7 +77,8 @@ h6 {
   padding-bottom: 24px;
 }
 .header-list li {
-  outline: 1px solid cadetblue;
+  outline: 1px solid rgb(63, 18, 134);
+  background-color: #ffffff;
 }
 
 .link.current {
