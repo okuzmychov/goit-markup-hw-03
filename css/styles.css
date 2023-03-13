@@ -44,7 +44,10 @@ img {
 
 .container {
   width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
+  /* outline: 2px solid red;*/
 }
 
 /*---------- HEADER ---------- */
@@ -55,7 +58,6 @@ img {
 }
 .header-nav {
   display: flex;
-  padding-left: 15px;
 }
 
 .header-logo {
@@ -68,11 +70,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
+  margin-right: 76px;
 }
 
 .accent {
   color: var(--primery-text-color);
-  margin-right: 76px;
 }
 
 .header-list,
@@ -99,7 +101,6 @@ img {
 
 .address {
   font-style: normal;
-  margin-right: 15px;
   margin-left: auto;
 }
 
@@ -117,22 +118,23 @@ img {
 /*---------- HERO ---------- */
 
 .hero {
-  width: 1440px;
-  height: 600px;
   left: 0px;
   top: 72px;
   text-align: center;
-  padding: 188px 472px;
+  padding-top: 188px;
+  padding-bottom: 188px;
   background-color: var(--primery-text-color);
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 120px;
 }
 
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 48px;
   color: var(--header-color);
 }
@@ -186,28 +188,21 @@ img {
   background-color: var(--hover-color);
 }
 
-/*.button.primary {
-    background-color: var(--hover-color);
-    color: var(--header-color);
-}
-
-.button.secondary {
-    background-color: var(--header-color);
-    color: var(--hover-color);
-}*/
-
 /*---------- About us ---------- */
 
-.studio-title,
-.portfolio-title {
-  visibility: hidden;
+.studio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.studio-title {
+  display: none;
 }
 
 .studio-list,
 .work-list {
   display: flex;
   gap: 24px;
-  margin-bottom: 120px;
 }
 
 .stidio-text,
@@ -231,8 +226,8 @@ img {
 
 /*---------- What are we doing ---------- */
 
-.work-container {
-  margin-bottom: 120px;
+.work {
+  padding-bottom: 120px;
 }
 
 .section-title {
@@ -248,15 +243,11 @@ img {
 /*---------- Team ---------- */
 
 .team {
-  width: 1440px;
-  height: 732px;
   left: 0px;
   top: 1548px;
   background: #f4f4fd;
-
-  padding: 120px 156px;
-  margin-right: auto;
-  margin-left: auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-list {
@@ -277,8 +268,8 @@ img {
 
 /*---------- Portfolio ---------- */
 
-.portfolio {
-  padding: 96px 156px 120px 156px;
+.portfolio-title {
+  display: none;
 }
 
 .pictures .link {
@@ -288,14 +279,14 @@ img {
 .portfolio-container {
   display: flex;
   gap: 24px;
+  padding-top: 96px;
+  margin-bottom: 72px;
+  justify-content: center;
 }
 
 .button {
   display: flex;
   gap: 24px;
-  margin-left: auto;
-  margin-bottom: 72px;
-  margin-right: auto;
 }
 
 .pictures {
@@ -305,27 +296,25 @@ img {
 }
 
 .pictures-list {
-  flex-basis: calc((100% - 78px) / 3);
+  width: calc((100% - 48px) / 3);
   border: 1px solid var(--button-color);
 }
 
 .pictures-item {
   margin-bottom: 8px;
 }
+.pictures-container {
+  padding-bottom: 120px;
+}
 
 .pictures-conteint {
-  flex-basis: calc((100% - 78px) / 3);
   padding: 32px 16px;
 }
 
 /*----------- FOOTER ------------*/
 .footer {
-  width: 1440px;
-  height: 310px;
-  margin-right: auto;
-  margin-left: auto;
   padding-top: 100px;
-  padding-left: 156px;
+  padding-bottom: 100px;
   background-color: var(--primery-text-color);
 }
 
