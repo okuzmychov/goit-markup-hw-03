@@ -51,11 +51,15 @@ img {
 }
 
 /*---------- HEADER ---------- */
+.header {
+  border-bottom: 1px solid var(--button-color);
+}
+
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--button-color);
 }
+
 .header-nav {
   display: flex;
 }
@@ -197,6 +201,10 @@ img {
 
 .studio-title {
   display: none;
+}
+
+.studio-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .studio-list,
